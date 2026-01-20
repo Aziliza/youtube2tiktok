@@ -1,0 +1,349 @@
+2026-01-20 15:30:56 - youtube_downloader - INFO - youtube_downloader.py:70 - 提取视频信息成功：标题=knowledge Distillation，时长=60秒
+2026-01-20 15:30:59 - youtube_downloader - ERROR - youtube_downloader.py:125 - 下载视频失败：[0;31mERROR:[0m [youtube] U9vZjYmt81c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1831, in __extract_info
+    ie_result = ie.extract(url)
+                ^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 762, in extract
+    ie_result = self._real_extract(url)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_video.py", line 3910, in _real_extract
+    self.raise_no_formats(reason, expected=True)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 1274, in raise_no_formats
+    raise ExtractorError(msg, expected=expected, video_id=video_id)
+yt_dlp.utils.ExtractorError: [youtube] U9vZjYmt81c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\wqy\youtube2tiktok\core\youtube_downloader.py", line 90, in download_video
+    ydl.download([url])
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3662, in download
+    self.__download_wrapper(self.extract_info)(
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3635, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1714, in wrapper
+    self.report_error(str(e), e.format_traceback())
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] U9vZjYmt81c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-01-20 15:34:44 - youtube2tiktok - INFO - main.py:50 - 启动YouTube to TikTok工具
+2026-01-20 15:38:28 - youtube2tiktok - INFO - main.py:50 - 启动YouTube to TikTok工具
+2026-01-20 15:38:28 - youtube_downloader - INFO - youtube_downloader.py:72 - 已配置使用chrome浏览器的cookies
+2026-01-20 15:38:29 - youtube_downloader - ERROR - youtube_downloader.py:87 - 提取视频信息失败：[0;31mERROR:[0m _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 97, in load_cookies
+    browser_name, profile, keyring, container = _parse_browser_specification(*browser_specification)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4174, in cookiejar
+    return load_cookies(
+           ^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 83, in get_video_info
+    info = ydl.extract_info(url, download=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1831, in __extract_info
+    ie_result = ie.extract(url)
+                ^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 759, in extract
+    self.initialize()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 668, in initialize
+    self._real_initialize()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_video.py", line 1842, in _real_initialize
+    super()._real_initialize()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 679, in _real_initialize
+    self._initialize_pref()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 662, in _initialize_pref
+    pref_cookie = self._youtube_cookies.get('PREF')
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 763, in _youtube_cookies
+    return self._get_cookies('https://www.youtube.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 3768, in _get_cookies
+    return LenientSimpleCookie(self._downloader.cookiejar.get_cookie_header(url))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\functools.py", line 1001, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4178, in cookiejar
+    self.report_error(str(cause), tb=''.join(traceback.format_exception(cause)))
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 97, in load_cookies
+    browser_name, profile, keyring, container = _parse_browser_specification(*browser_specification)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4174, in cookiejar
+    return load_cookies(
+           ^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 81, in get_video_info
+    with yt_dlp.YoutubeDL(self.ydl_opts) as ydl:
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1051, in __exit__
+    self.close()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1054, in close
+    self.save_cookies()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1046, in save_cookies
+    self.cookiejar.save()
+    ^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\functools.py", line 1001, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4178, in cookiejar
+    self.report_error(str(cause), tb=''.join(traceback.format_exception(cause)))
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
+2026-01-20 15:38:29 - youtube2tiktok - INFO - main.py:87 - YouTube to TikTok工具运行结束
+2026-01-20 15:40:38 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：D:\wqy\youtube2tiktok\config/cookies.txt
+2026-01-20 15:40:39 - youtube_downloader - ERROR - youtube_downloader.py:96 - 提取视频信息失败：[0;31mERROR:[0m 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 108, in load_cookies
+    jar.load()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1369, in load
+    self._really_load(cf, filename, ignore_discard, ignore_expires)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\cookiejar.py", line 2018, in _really_load
+    raise LoadError(
+http.cookiejar.LoadError: 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4174, in cookiejar
+    return load_cookies(
+           ^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 92, in get_video_info
+    info = ydl.extract_info(url, download=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1831, in __extract_info
+    ie_result = ie.extract(url)
+                ^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 759, in extract
+    self.initialize()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 668, in initialize
+    self._real_initialize()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_video.py", line 1842, in _real_initialize
+    super()._real_initialize()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 679, in _real_initialize
+    self._initialize_pref()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 662, in _initialize_pref
+    pref_cookie = self._youtube_cookies.get('PREF')
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 763, in _youtube_cookies
+    return self._get_cookies('https://www.youtube.com')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 3768, in _get_cookies
+    return LenientSimpleCookie(self._downloader.cookiejar.get_cookie_header(url))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\functools.py", line 1001, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4178, in cookiejar
+    self.report_error(str(cause), tb=''.join(traceback.format_exception(cause)))
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 108, in load_cookies
+    jar.load()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1369, in load
+    self._really_load(cf, filename, ignore_discard, ignore_expires)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\cookiejar.py", line 2018, in _really_load
+    raise LoadError(
+http.cookiejar.LoadError: 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4174, in cookiejar
+    return load_cookies(
+           ^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 90, in get_video_info
+    with yt_dlp.YoutubeDL(self.ydl_opts) as ydl:
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1051, in __exit__
+    self.close()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1054, in close
+    self.save_cookies()
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1046, in save_cookies
+    self.cookiejar.save()
+    ^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\functools.py", line 1001, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4178, in cookiejar
+    self.report_error(str(cause), tb=''.join(traceback.format_exception(cause)))
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
+2026-01-20 15:41:02 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：D:\wqy\youtube2tiktok\config/cookies.txt
+2026-01-20 15:41:08 - youtube_downloader - INFO - youtube_downloader.py:93 - 提取视频信息成功：标题=Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)，时长=213秒
+2026-01-20 15:42:00 - youtube_downloader - ERROR - youtube_downloader.py:148 - 下载视频失败：[0;31mERROR:[0m The downloaded file is empty
+Traceback (most recent call last):
+  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 113, in download_video
+    ydl.download([url])
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3662, in download
+    self.__download_wrapper(self.extract_info)(
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3635, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1852, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1911, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3089, in process_video_result
+    self.process_info(new_info)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 189, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3536, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3278, in dl
+    return fd.download(name, new_info, subtitle)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\common.py", line 480, in download
+    ret = self.real_download(filename, info_dict)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\hls.py", line 409, in real_download
+    return self.download_and_append_fragments(ctx, fragments, info_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\fragment.py", line 526, in download_and_append_fragments
+    return self._finish_frag_download(ctx, info_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\fragment.py", line 300, in _finish_frag_download
+    self.report_error('The downloaded file is empty')
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m The downloaded file is empty
+2026-01-20 15:44:49 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\wqy\youtube2tiktok\config/cookies.txt
+2026-01-20 15:44:56 - youtube_downloader - INFO - youtube_downloader.py:93 - 提取视频信息成功：标题=knowledge Distillation，时长=60秒
+2026-01-20 15:45:14 - youtube_downloader - ERROR - youtube_downloader.py:148 - 下载视频失败：[0;31mERROR:[0m The downloaded file is empty
+Traceback (most recent call last):
+  File "d:\wqy\youtube2tiktok\core\youtube_downloader.py", line 113, in download_video
+    ydl.download([url])
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3662, in download
+    self.__download_wrapper(self.extract_info)(
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3635, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1852, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1911, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3089, in process_video_result
+    self.process_info(new_info)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 189, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3536, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3278, in dl
+    return fd.download(name, new_info, subtitle)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\common.py", line 480, in download
+    ret = self.real_download(filename, info_dict)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\hls.py", line 409, in real_download
+    return self.download_and_append_fragments(ctx, fragments, info_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\fragment.py", line 526, in download_and_append_fragments
+    return self._finish_frag_download(ctx, info_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\fragment.py", line 300, in _finish_frag_download
+    self.report_error('The downloaded file is empty')
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m The downloaded file is empty
