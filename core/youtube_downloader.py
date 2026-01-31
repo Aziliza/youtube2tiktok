@@ -12,6 +12,8 @@ from config.settings import (
     VIDEO_QUALITY,
     PROJECT_ROOT,
     SUBTITLE_DIR,
+    VIDEO_INFO_DIR,
+    AUDIO_DIR,
     SUBTITLE_FORMAT,
     SOURCE_LANGUAGE,
     DOWNLOAD_AUTO_GENERATED_SUBTITLES,
@@ -33,7 +35,8 @@ class YouTubeDownloader:
         self.ydl_opts = {
             # 1. 格式选择：优先选指定清晰度的MP4，音视频合并
             # format说明：bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]
-            'format': f'bestvideo[height<={VIDEO_QUALITY.split("p")[0]}][ext=mp4]+bestaudio[ext=m4a]/best[height<={VIDEO_QUALITY.split("p")[0]}][ext=mp4]',
+            # 'format': f'bestvideo[height<={VIDEO_QUALITY.split("p")[0]}][ext=mp4]+bestaudio[ext=m4a]/best[height<={VIDEO_QUALITY.split("p")[0]}][ext=mp4]',
+            'format': 'bestvideo+bestaudio/best',
             
             # 2. 输出配置：指定目录+统一文件名格式（避免特殊字符）
             'outtmpl': os.path.join(RAW_VIDEO_DIR, '%(title)s_%(id)s.%(ext)s'),
@@ -50,6 +53,7 @@ class YouTubeDownloader:
             # 4. 元数据提取：保存视频信息（标题、时长、封面等）
             'writedescription': False,  # 不下载描述文件（可选开启）
             'writeinfojson': True,  # 保存视频元信息到JSON文件（方便后续用）
+            'infojson_outtmpl': os.path.join(VIDEO_INFO_DIR, '%(title)s_%(id)s.info.json'),  # 视频信息JSON保存路径
             'json_download': False,
             
             # 5. 字幕配置
@@ -63,7 +67,7 @@ class YouTubeDownloader:
             'cookiefile': COOKIES_FILE if COOKIES_FILE and os.path.exists(COOKIES_FILE) else None,
             
             # 7. 其他：跳过已下载的视频
-            'download_archive': os.path.join(PROJECT_ROOT, 'downloaded_videos.txt'),
+            'download_archive': os.path.join(PROJECT_ROOT, 'logs/downloaded_videos.txt'),
         }
         
         # 添加浏览器cookies支持

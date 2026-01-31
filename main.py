@@ -1,5 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+'''
+Author: qianyu
+Date: 2026-01-20 21:23:08
+LastEditTime: 2026-01-31 20:07:14
+'''
+
 '''
 YouTube to TikTok 主入口文件
 
@@ -60,7 +64,7 @@ def main():
     
     # 示例1：下载单个视频
     print("\n🚀 示例1：下载单个YouTube视频")
-    video_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"  # 示例视频链接
+    video_url = "https://www.youtube.com/shorts/4KgsPVT1G8w"  # 示例视频链接
     print(f"正在下载视频：{video_url}")
     
     result = downloader.download_video(video_url)
@@ -71,17 +75,6 @@ def main():
     else:
         print(f"❌ 下载失败！")
     
-    # 示例2：批量下载视频
-    print("\n🚀 示例2：批量下载YouTube视频")
-    video_urls = [
-        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        # 添加更多视频链接...
-    ]
-    
-    if len(video_urls) > 1:
-        results = downloader.batch_download(video_urls)
-        print(f"✅ 批量下载完成！")
-        print(f"   成功下载：{len(results)}个视频")
     
     print("\n🎉 所有操作完成！")
     logger.info("YouTube to TikTok工具运行结束")

@@ -1,352 +1,236 @@
-2026-01-20 15:30:56 - youtube_downloader - INFO - youtube_downloader.py:70 - 提取视频信息成功：标题=knowledge Distillation，时长=60秒
-2026-01-20 15:30:59 - youtube_downloader - ERROR - youtube_downloader.py:125 - 下载视频失败：[0;31mERROR:[0m [youtube] U9vZjYmt81c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-01-31 20:07:06 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:07:44 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:07:44 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:07:49 - youtube_downloader - INFO - youtube_downloader.py:93 - 提取视频信息成功：标题=feature matching in knowledge Distillation #deeplearning，时长=60秒
+2026-01-31 20:07:56 - youtube_downloader - INFO - youtube_downloader.py:136 - 视频下载完成：d:\learning\project\youtube2tiktok\data\raw_videos\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.mp4
+2026-01-31 20:07:56 - youtube_downloader - INFO - youtube_downloader.py:138 - 字幕下载完成：['d:\\learning\\project\\youtube2tiktok\\data/raw_videos\\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.en.srt']
+2026-01-31 20:07:56 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
+2026-01-31 20:13:39 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:13:39 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:13:39 - youtube_downloader - ERROR - youtube_downloader.py:96 - 提取视频信息失败：'NoneType' object has no attribute 'get'
 Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
+  File "d:\learning\project\youtube2tiktok\core\youtube_downloader.py", line 93, in get_video_info
+    logger.info(f"提取视频信息成功：标题={info.get('title')}，时长={info.get('duration')}秒")
+                                          ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2026-01-31 20:13:39 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
+2026-01-31 20:13:57 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:13:57 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:13:57 - youtube_downloader - ERROR - youtube_downloader.py:96 - 提取视频信息失败：'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "d:\learning\project\youtube2tiktok\core\youtube_downloader.py", line 93, in get_video_info
+    logger.info(f"提取视频信息成功：标题={info.get('title')}，时长={info.get('duration')}秒")
+                                          ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2026-01-31 20:13:57 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
+2026-01-31 20:14:19 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:14:19 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:14:19 - youtube_downloader - ERROR - youtube_downloader.py:96 - 提取视频信息失败：'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "d:\learning\project\youtube2tiktok\core\youtube_downloader.py", line 93, in get_video_info
+    logger.info(f"提取视频信息成功：标题={info.get('title')}，时长={info.get('duration')}秒")
+                                          ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2026-01-31 20:14:19 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
+2026-01-31 20:15:04 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:15:04 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:15:08 - youtube_downloader - INFO - youtube_downloader.py:93 - 提取视频信息成功：标题=feature matching in knowledge Distillation #deeplearning，时长=60秒
+2026-01-31 20:15:14 - youtube_downloader - INFO - youtube_downloader.py:136 - 视频下载完成：d:\learning\project\youtube2tiktok\data\raw_videos\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.mp4
+2026-01-31 20:15:14 - youtube_downloader - INFO - youtube_downloader.py:138 - 字幕下载完成：['d:\\learning\\project\\youtube2tiktok\\data/raw_videos\\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.en.srt']
+2026-01-31 20:15:14 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
+2026-01-31 20:16:34 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:16:34 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:16:39 - youtube_downloader - INFO - youtube_downloader.py:93 - 提取视频信息成功：标题=feature matching in knowledge Distillation #deeplearning，时长=60秒
+2026-01-31 20:16:46 - youtube_downloader - INFO - youtube_downloader.py:136 - 视频下载完成：d:\learning\project\youtube2tiktok\data\raw_videos\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.mp4
+2026-01-31 20:16:46 - youtube_downloader - INFO - youtube_downloader.py:138 - 字幕下载完成：['d:\\learning\\project\\youtube2tiktok\\data/raw_videos\\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.en.srt']
+2026-01-31 20:16:46 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
+2026-01-31 20:19:51 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:19:51 - youtube_downloader - INFO - youtube_downloader.py:84 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:19:56 - youtube_downloader - INFO - youtube_downloader.py:94 - 提取视频信息成功：标题=feature matching in knowledge Distillation #deeplearning，时长=60秒
+2026-01-31 20:20:01 - youtube_downloader - ERROR - youtube_downloader.py:149 - 下载视频失败：[Errno 2] No such file or directory: 'd:\\learning\\project\\youtube2tiktok\\log/downloaded_videos.txt'
+Traceback (most recent call last):
+  File "d:\learning\project\youtube2tiktok\core\youtube_downloader.py", line 114, in download_video
+    ydl.download([url])
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3670, in download
+    self.__download_wrapper(self.extract_info)(
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3643, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1687, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1698, in wrapper
     return func(self, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1831, in __extract_info
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1854, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1913, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3110, in process_video_result
+    self.record_download_archive(info_dict)
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3850, in record_download_archive
+    with locked_file(fn, 'a', encoding='utf-8') as archive_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\utils\_utils.py", line 1631, in __init__
+    self.f = os.fdopen(os.open(filename, flags, 0o666), mode, encoding=encoding)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'd:\\learning\\project\\youtube2tiktok\\log/downloaded_videos.txt'
+2026-01-31 20:20:01 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
+2026-01-31 20:20:30 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:20:30 - youtube_downloader - INFO - youtube_downloader.py:84 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:20:35 - youtube_downloader - INFO - youtube_downloader.py:94 - 提取视频信息成功：标题=feature matching in knowledge Distillation #deeplearning，时长=60秒
+2026-01-31 20:20:41 - youtube_downloader - INFO - youtube_downloader.py:137 - 视频下载完成：d:\learning\project\youtube2tiktok\data\raw_videos\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.mp4
+2026-01-31 20:20:41 - youtube_downloader - INFO - youtube_downloader.py:139 - 字幕下载完成：['d:\\learning\\project\\youtube2tiktok\\data/raw_videos\\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.en.srt']
+2026-01-31 20:20:41 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
+2026-01-31 20:30:15 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:30:15 - youtube_downloader - INFO - youtube_downloader.py:87 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:31:13 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:31:13 - youtube_downloader - INFO - youtube_downloader.py:87 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:33:53 - youtube_downloader - ERROR - youtube_downloader.py:100 - 提取视频信息失败：[0;31mERROR:[0m [youtube] 4KgsPVT1G8w: Unable to download API page: (<HTTPSConnection(host='www.youtube.com', port=443) at 0x1dab34d6c90>, 'Connection to www.youtube.com timed out. (connect timeout=20.0)') (caused by TransportError("(<HTTPSConnection(host='www.youtube.com', port=443) at 0x1dab34d6c90>, 'Connection to www.youtube.com timed out. (connect timeout=20.0)')"))
+Traceback (most recent call last):
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\networking\_requests.py", line 324, in _send
+    requests_res = session.request(
+                   ^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\util\retry.py", line 465, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='www.youtube.com', port=443) at 0x1dab34d6c90>, 'Connection to www.youtube.com timed out. (connect timeout=20.0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 910, in _request_webpage
+    return self._downloader.urlopen(self._create_request(url_or_request, data, headers, query, extensions))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4260, in urlopen
+    return self._request_director.send(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\networking\common.py", line 117, in send
+    response = handler.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\networking\_helper.py", line 194, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\networking\common.py", line 359, in send
+    return self._send(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\networking\_requests.py", line 352, in _send
+    raise TransportError(cause=e) from e
+yt_dlp.networking.exceptions.TransportError: (<HTTPSConnection(host='www.youtube.com', port=443) at 0x1dab34d6c90>, 'Connection to www.youtube.com timed out. (connect timeout=20.0)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1698, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1833, in __extract_info
     ie_result = ie.extract(url)
                 ^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 762, in extract
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 763, in extract
     ie_result = self._real_extract(url)
                 ^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_video.py", line 3910, in _real_extract
-    self.raise_no_formats(reason, expected=True)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 1274, in raise_no_formats
-    raise ExtractorError(msg, expected=expected, video_id=video_id)
-yt_dlp.utils.ExtractorError: [youtube] U9vZjYmt81c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_video.py", line 3883, in _real_extract
+    webpage, webpage_ytcfg, initial_data, is_premium_subscriber, player_responses, player_url = self._initial_extract(
+                                                                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_video.py", line 3863, in _initial_extract
+    initial_data = self._download_initial_data(video_id, webpage, webpage_client, webpage_ytcfg)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_video.py", line 3841, in _download_initial_data
+    initial_data = self._extract_response(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 1284, in _extract_response
+    next(main_retries)
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\utils\_utils.py", line 5271, in __iter__
+    self.error_callback(self.error, self.attempt, self.retries)
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 4060, in _error_or_warning
+    RetryManager.report_retry(
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\utils\_utils.py", line 5279, in report_retry
+    raise e
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 1274, in _extract_response
+    response = self._call_api(
+               ^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 848, in _call_api
+    return self._download_json(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 1151, in download_content
+    res = getattr(self, download_handle.__name__)(url_or_request, video_id, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 1109, in download_handle
+    res = self._download_webpage_handle(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 974, in _download_webpage_handle
+    urlh = self._request_webpage(url_or_request, video_id, note, errnote, fatal, data=data,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 826, in _request_webpage
+    response = super()._request_webpage(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 923, in _request_webpage
+    raise ExtractorError(errmsg, cause=err)
+yt_dlp.utils.ExtractorError: [youtube] 4KgsPVT1G8w: Unable to download API page: (<HTTPSConnection(host='www.youtube.com', port=443) at 0x1dab34d6c90>, 'Connection to www.youtube.com timed out. (connect timeout=20.0)') (caused by TransportError("(<HTTPSConnection(host='www.youtube.com', port=443) at 0x1dab34d6c90>, 'Connection to www.youtube.com timed out. (connect timeout=20.0)')"))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "d:\wqy\youtube2tiktok\core\youtube_downloader.py", line 90, in download_video
-    ydl.download([url])
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3662, in download
-    self.__download_wrapper(self.extract_info)(
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3635, in wrapper
-    res = func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
+  File "d:\learning\project\youtube2tiktok\core\youtube_downloader.py", line 96, in get_video_info
+    info = ydl.extract_info(url, download=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1687, in extract_info
     return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1714, in wrapper
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1716, in wrapper
     self.report_error(str(e), e.format_traceback())
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
     self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+  File "D:\learning\project\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
     raise DownloadError(message, exc_info)
-yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] U9vZjYmt81c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-2026-01-20 15:34:44 - youtube2tiktok - INFO - main.py:50 - 启动YouTube to TikTok工具
-2026-01-20 15:38:28 - youtube2tiktok - INFO - main.py:50 - 启动YouTube to TikTok工具
-2026-01-20 15:38:28 - youtube_downloader - INFO - youtube_downloader.py:72 - 已配置使用chrome浏览器的cookies
-2026-01-20 15:38:29 - youtube_downloader - ERROR - youtube_downloader.py:87 - 提取视频信息失败：[0;31mERROR:[0m _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 97, in load_cookies
-    browser_name, profile, keyring, container = _parse_browser_specification(*browser_specification)
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4174, in cookiejar
-    return load_cookies(
-           ^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
-    raise CookieLoadError('failed to load cookies')
-yt_dlp.cookies.CookieLoadError: failed to load cookies
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 83, in get_video_info
-    info = ydl.extract_info(url, download=False)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
-    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1831, in __extract_info
-    ie_result = ie.extract(url)
-                ^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 759, in extract
-    self.initialize()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 668, in initialize
-    self._real_initialize()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_video.py", line 1842, in _real_initialize
-    super()._real_initialize()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 679, in _real_initialize
-    self._initialize_pref()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 662, in _initialize_pref
-    pref_cookie = self._youtube_cookies.get('PREF')
-                  ^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 763, in _youtube_cookies
-    return self._get_cookies('https://www.youtube.com')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 3768, in _get_cookies
-    return LenientSimpleCookie(self._downloader.cookiejar.get_cookie_header(url))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\functools.py", line 1001, in __get__
-    val = self.func(instance)
-          ^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4178, in cookiejar
-    self.report_error(str(cause), tb=''.join(traceback.format_exception(cause)))
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
-    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
-    raise DownloadError(message, exc_info)
-yt_dlp.utils.DownloadError: [0;31mERROR:[0m _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 97, in load_cookies
-    browser_name, profile, keyring, container = _parse_browser_specification(*browser_specification)
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4174, in cookiejar
-    return load_cookies(
-           ^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
-    raise CookieLoadError('failed to load cookies')
-yt_dlp.cookies.CookieLoadError: failed to load cookies
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 81, in get_video_info
-    with yt_dlp.YoutubeDL(self.ydl_opts) as ydl:
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1051, in __exit__
-    self.close()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1054, in close
-    self.save_cookies()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1046, in save_cookies
-    self.cookiejar.save()
-    ^^^^^^^^^^^^^^
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\functools.py", line 1001, in __get__
-    val = self.func(instance)
-          ^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4178, in cookiejar
-    self.report_error(str(cause), tb=''.join(traceback.format_exception(cause)))
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
-    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
-    raise DownloadError(message, exc_info)
-yt_dlp.utils.DownloadError: [0;31mERROR:[0m _parse_browser_specification() takes from 1 to 4 positional arguments but 6 were given
-2026-01-20 15:38:29 - youtube2tiktok - INFO - main.py:87 - YouTube to TikTok工具运行结束
-2026-01-20 15:40:38 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：D:\wqy\youtube2tiktok\config/cookies.txt
-2026-01-20 15:40:39 - youtube_downloader - ERROR - youtube_downloader.py:96 - 提取视频信息失败：[0;31mERROR:[0m 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 108, in load_cookies
-    jar.load()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1369, in load
-    self._really_load(cf, filename, ignore_discard, ignore_expires)
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\cookiejar.py", line 2018, in _really_load
-    raise LoadError(
-http.cookiejar.LoadError: 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4174, in cookiejar
-    return load_cookies(
-           ^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
-    raise CookieLoadError('failed to load cookies')
-yt_dlp.cookies.CookieLoadError: failed to load cookies
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 92, in get_video_info
-    info = ydl.extract_info(url, download=False)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
-    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1831, in __extract_info
-    ie_result = ie.extract(url)
-                ^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 759, in extract
-    self.initialize()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 668, in initialize
-    self._real_initialize()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_video.py", line 1842, in _real_initialize
-    super()._real_initialize()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 679, in _real_initialize
-    self._initialize_pref()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 662, in _initialize_pref
-    pref_cookie = self._youtube_cookies.get('PREF')
-                  ^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 763, in _youtube_cookies
-    return self._get_cookies('https://www.youtube.com')
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 3768, in _get_cookies
-    return LenientSimpleCookie(self._downloader.cookiejar.get_cookie_header(url))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\functools.py", line 1001, in __get__
-    val = self.func(instance)
-          ^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4178, in cookiejar
-    self.report_error(str(cause), tb=''.join(traceback.format_exception(cause)))
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
-    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
-    raise DownloadError(message, exc_info)
-yt_dlp.utils.DownloadError: [0;31mERROR:[0m 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 108, in load_cookies
-    jar.load()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1369, in load
-    self._really_load(cf, filename, ignore_discard, ignore_expires)
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\cookiejar.py", line 2018, in _really_load
-    raise LoadError(
-http.cookiejar.LoadError: 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4174, in cookiejar
-    return load_cookies(
-           ^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
-    raise CookieLoadError('failed to load cookies')
-yt_dlp.cookies.CookieLoadError: failed to load cookies
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 90, in get_video_info
-    with yt_dlp.YoutubeDL(self.ydl_opts) as ydl:
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1051, in __exit__
-    self.close()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1054, in close
-    self.save_cookies()
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1046, in save_cookies
-    self.cookiejar.save()
-    ^^^^^^^^^^^^^^
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\functools.py", line 1001, in __get__
-    val = self.func(instance)
-          ^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4178, in cookiejar
-    self.report_error(str(cause), tb=''.join(traceback.format_exception(cause)))
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
-    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
-    raise DownloadError(message, exc_info)
-yt_dlp.utils.DownloadError: [0;31mERROR:[0m 'D:\\wqy\\youtube2tiktok\\config/cookies.txt' does not look like a Netscape format cookies file
-2026-01-20 15:41:02 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：D:\wqy\youtube2tiktok\config/cookies.txt
-2026-01-20 15:41:08 - youtube_downloader - INFO - youtube_downloader.py:93 - 提取视频信息成功：标题=Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)，时长=213秒
-2026-01-20 15:42:00 - youtube_downloader - ERROR - youtube_downloader.py:148 - 下载视频失败：[0;31mERROR:[0m The downloaded file is empty
-Traceback (most recent call last):
-  File "D:\wqy\youtube2tiktok\core\youtube_downloader.py", line 113, in download_video
-    ydl.download([url])
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3662, in download
-    self.__download_wrapper(self.extract_info)(
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3635, in wrapper
-    res = func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
-    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1852, in __extract_info
-    return self.process_ie_result(ie_result, download, extra_info)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1911, in process_ie_result
-    ie_result = self.process_video_result(ie_result, download=download)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3089, in process_video_result
-    self.process_info(new_info)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 189, in wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3536, in process_info
-    success, real_download = self.dl(temp_filename, info_dict)
-                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3278, in dl
-    return fd.download(name, new_info, subtitle)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\common.py", line 480, in download
-    ret = self.real_download(filename, info_dict)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\hls.py", line 409, in real_download
-    return self.download_and_append_fragments(ctx, fragments, info_dict)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\fragment.py", line 526, in download_and_append_fragments
-    return self._finish_frag_download(ctx, info_dict)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\fragment.py", line 300, in _finish_frag_download
-    self.report_error('The downloaded file is empty')
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
-    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
-    raise DownloadError(message, exc_info)
-yt_dlp.utils.DownloadError: [0;31mERROR:[0m The downloaded file is empty
-2026-01-20 15:44:49 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\wqy\youtube2tiktok\config/cookies.txt
-2026-01-20 15:44:56 - youtube_downloader - INFO - youtube_downloader.py:93 - 提取视频信息成功：标题=knowledge Distillation，时长=60秒
-2026-01-20 15:45:14 - youtube_downloader - ERROR - youtube_downloader.py:148 - 下载视频失败：[0;31mERROR:[0m The downloaded file is empty
-Traceback (most recent call last):
-  File "d:\wqy\youtube2tiktok\core\youtube_downloader.py", line 113, in download_video
-    ydl.download([url])
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3662, in download
-    self.__download_wrapper(self.extract_info)(
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3635, in wrapper
-    res = func(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1685, in extract_info
-    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1696, in wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1852, in __extract_info
-    return self.process_ie_result(ie_result, download, extra_info)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1911, in process_ie_result
-    ie_result = self.process_video_result(ie_result, download=download)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3089, in process_video_result
-    self.process_info(new_info)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 189, in wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3536, in process_info
-    success, real_download = self.dl(temp_filename, info_dict)
-                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3278, in dl
-    return fd.download(name, new_info, subtitle)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\common.py", line 480, in download
-    ret = self.real_download(filename, info_dict)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\hls.py", line 409, in real_download
-    return self.download_and_append_fragments(ctx, fragments, info_dict)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\fragment.py", line 526, in download_and_append_fragments
-    return self._finish_frag_download(ctx, info_dict)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\downloader\fragment.py", line 300, in _finish_frag_download
-    self.report_error('The downloaded file is empty')
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
-    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
-  File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
-    raise DownloadError(message, exc_info)
-yt_dlp.utils.DownloadError: [0;31mERROR:[0m The downloaded file is empty
-2026-01-20 21:40:45 - youtube2tiktok - INFO - main.py:50 - 启动YouTube to TikTok工具
-2026-01-20 21:40:45 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
-2026-01-20 21:40:51 - youtube_downloader - INFO - youtube_downloader.py:93 - 提取视频信息成功：标题=Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)，时长=213秒
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] 4KgsPVT1G8w: Unable to download API page: (<HTTPSConnection(host='www.youtube.com', port=443) at 0x1dab34d6c90>, 'Connection to www.youtube.com timed out. (connect timeout=20.0)') (caused by TransportError("(<HTTPSConnection(host='www.youtube.com', port=443) at 0x1dab34d6c90>, 'Connection to www.youtube.com timed out. (connect timeout=20.0)')"))
+2026-01-31 20:33:53 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
+2026-01-31 20:34:05 - youtube2tiktok - INFO - main.py:54 - 启动YouTube to TikTok工具
+2026-01-31 20:34:05 - youtube_downloader - INFO - youtube_downloader.py:87 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-31 20:34:12 - youtube_downloader - INFO - youtube_downloader.py:97 - 提取视频信息成功：标题=feature matching in knowledge Distillation #deeplearning，时长=60秒
+2026-01-31 20:34:20 - youtube_downloader - INFO - youtube_downloader.py:140 - 视频下载完成：d:\learning\project\youtube2tiktok\data\raw_videos\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.mp4
+2026-01-31 20:34:20 - youtube_downloader - INFO - youtube_downloader.py:142 - 字幕下载完成：['d:\\learning\\project\\youtube2tiktok\\data/raw_videos\\feature matching in knowledge Distillation #deeplearning_4KgsPVT1G8w.en.srt']
+2026-01-31 20:34:20 - youtube2tiktok - INFO - main.py:80 - YouTube to TikTok工具运行结束
