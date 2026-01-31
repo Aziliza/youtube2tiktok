@@ -12,12 +12,13 @@ RAW_VIDEO_DIR = os.path.join(PROJECT_ROOT, "data/raw_videos")
 PROCESSED_VIDEO_DIR = os.path.join(PROJECT_ROOT, "data/processed_videos")
 AUDIO_DIR = os.path.join(PROJECT_ROOT, "data/audio")
 SUBTITLE_DIR = os.path.join(PROJECT_ROOT, "data/subtitles")
+
 LOG_DIR = os.path.join(PROJECT_ROOT, "logs")
 
 # 业务配置
 SOURCE_LANGUAGE = "en"  # YouTube视频原始语言
 TARGET_LANGUAGE = "zh"  # 目标翻译语言（中文）
-VIDEO_QUALITY = "720p"  # 下载视频质量
+VIDEO_QUALITY = "1440p"  # 下载视频质量
 MAX_VIDEO_DURATION = 60 * 5  # 最大视频时长（秒），TikTok建议15-60秒，这里设为5分钟
 
 # 字幕配置
