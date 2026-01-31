@@ -347,3 +347,6 @@ Traceback (most recent call last):
   File "D:\wqy\youtube2tiktok\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
     raise DownloadError(message, exc_info)
 yt_dlp.utils.DownloadError: [0;31mERROR:[0m The downloaded file is empty
+2026-01-20 21:40:45 - youtube2tiktok - INFO - main.py:50 - 启动YouTube to TikTok工具
+2026-01-20 21:40:45 - youtube_downloader - INFO - youtube_downloader.py:83 - 已配置使用cookies文件：d:\learning\project\youtube2tiktok\config/cookies.txt
+2026-01-20 21:40:51 - youtube_downloader - INFO - youtube_downloader.py:93 - 提取视频信息成功：标题=Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)，时长=213秒
